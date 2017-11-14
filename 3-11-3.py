@@ -3,7 +3,7 @@ score = input('Enter score: ')
 e = 'Bad score'
 try:
     score = float(score)
-except:
+except ValueError:
     print(e)
 
 if type(score) != float:

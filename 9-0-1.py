@@ -7,6 +7,7 @@ for line in fhandle:
 
 while True:
     check = input('|> ')
-    if check == 'done': break
+    if check == 'done':
+        break
     if check in wordmap:
         print(' <--OK--> ')

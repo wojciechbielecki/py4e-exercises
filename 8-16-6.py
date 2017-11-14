@@ -1,10 +1,11 @@
 numbers = list()
 while True:
     value = input('Enter a number: ')
-    if value == 'done': break
+    if value == 'done':
+        break
     try:
         value = float(value)
-    except:
+    except ValueError:
         print('Invalid input')
         continue
     numbers.append(value)

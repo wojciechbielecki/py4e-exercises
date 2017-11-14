@@ -3,7 +3,7 @@ import string
 fname = input('File: ')
 try:
     fhandle = open(fname)
-except:
+except FileNotFoundError:
     raise SystemExit
 
 wordmap = dict()
